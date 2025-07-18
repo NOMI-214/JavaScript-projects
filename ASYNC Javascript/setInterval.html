@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Interval JS</title>
+  </head>
+  <body>
+    <h1>This is Javascript SetInterval Page practice</h1>
+    <button id="start">start</button>
+    <button id="Stop">Stop</button>
+  </body>
+  <script>
+
+    document.getElementById("start").addEventListener('click',setInterval(() => {
+        console.log(date.now())
+    }, 1000);
+    })
+  </script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Event KeyCodes</title>
+
+    <style>
+      nav {
+        background-color: #1c1c1c;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 15px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+        text-shadow: #f4f4f4 0px 0px 5px;
+        text-decoration: solid 1px #f4f4f4;
+        -webkit-text-fill-color: #ffffff;
+        text-size-adjust: bold;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .key {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+      }
+      #insert {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #e7e7e7;
+      }
+      .project {
+        background-color: #1c1c1c;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+      }
+
+      .color {
+        color: aliceblue;
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/muhammad-nouman-707462299/"
+        >LinkedIn</a
+      >
+    </nav>
+    <div class="project">
+      <div id="insert">
+        <div class="key">Press the key and watch magic</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
