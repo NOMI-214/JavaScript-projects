@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherCast - Modern Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="background-animation"></div>
+  <div class="container">
+    <header class="app-header">
+      <div class="logo">
+        <span class="brand-blue">Weather</span><span class="brand-yellow">Cast</span>
+        <p class="subtitle">Your daily weather companion</p>
+      </div>
+      <div class="search-group">
+        <input type="text" id="search-input" placeholder="Search location..." aria-label="Search location">
+        <button id="search-btn" aria-label="Search">🔍</button>
+        <span id="location-label">New York, USA</span>
+      </div>
+      <div class="theme-toggle">
+        <input type="checkbox" id="toggle-theme" aria-label="Toggle dark mode">
+        <label for="toggle-theme" id="theme-label">🌙 Dark Mode</label>
+      </div>
+    </header>
+
+    <main>
+      <section class="weather-main glass-card">
+        <div class="weather-today">
+          <div class="weather-info">
+            <div class="date" id="date-today">Today • Monday, 15 May</div>
+            <div class="temp-row">
+              <span class="temp" id="current-temp">72°F</span>
+              <img id="weather-icon" src="" alt="Weather Icon">
+            </div>
+            <div class="condition" id="weather-condition">Partly Cloudy</div>
+            <div class="details-row">
+              <span id="high-temp">78°F</span>
+              <span id="low-temp">65°F</span>
+              <span id="precip-chance">30%</span>
+            </div>
+            <div class="stats">
+              <div>Humidity <span id="humidity">65%</span></div>
+              <div>Wind <span id="wind">8 mph</span></div>
+              <div>UV Index <span id="uv">3</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-extras">
+          <div class="air-quality glass-card">
+            <div>Air Quality</div>
+            <div id="air-quality-value">Good</div>
+            <div id="aqi">AQI: 42</div>
+          </div>
+          <div class="sunrise-sunset glass-card">
+            <div>Sunrise & Sunset</div>
+            <div><span id="sunrise">5:42 AM</span> <span id="sunset">8:15 PM</span></div>
+          </div>
+          <div class="precip glass-card">
+            <div>Precipitation</div>
+            <div id="precip-amount">0.2 in</div>
+            <div>Last 24h</div>
+          </div>
+          <div class="feels-like glass-card">
+            <div>Feels Like</div>
+            <div id="feels-like">75°F</div>
+            <div>Similar to actual temp</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hourly-forecast">
+        <h2>Hourly Forecast</h2>
+        <div class="hourly-list" id="hourly-list">
+          <!-- Hourly forecast cards injected here -->
+        </div>
+      </section>
+
+      <section class="daily-forecast">
+        <h2>7-Day Forecast</h2>
+        <div class="daily-list" id="daily-list">
+          <!-- 7-day forecast cards injected here -->
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
